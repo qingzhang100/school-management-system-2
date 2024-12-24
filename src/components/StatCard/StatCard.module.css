@@ -1,0 +1,57 @@
+.statcard {
+  border-radius: 0.8rem;
+  flex: 1;
+  color: white;
+}
+
+h3 {
+  font-size: var(--font-size-large);
+  margin-bottom: 1rem;
+}
+
+.top {
+  padding: var(--padding-medium);
+  display: flex;
+  justify-content: space-between;
+}
+
+.topText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bgcolor1 {
+  background-color: #17a2b8;
+}
+
+.bgcolor2 {
+  background-color: #28a745;
+}
+
+.bgcolor3 {
+  background-color: #e2ae11;
+}
+
+.bgcolor4 {
+  background-color: #dc3545;
+}
+
+.bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0.8rem 0.8rem;
+  padding: 0.5rem;
+}
+
+.moreinfo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+}

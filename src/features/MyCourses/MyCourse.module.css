@@ -1,0 +1,35 @@
+.searchSection {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 1450px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem 6rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .course-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 8rem 2rem;
+  }
+}

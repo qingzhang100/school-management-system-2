@@ -1,0 +1,214 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.checkbox {
+  vertical-align: middle;
+}
+
+.table th {
+  font-weight: 600;
+  background-color: #7b809a;
+  color: #fff;
+  text-align: left;
+  padding: 1.2rem;
+  /* vertical-align: middle; */
+}
+
+tr th:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+tr th:last-child {
+  border-radius: 0rem 0.5rem 0.5rem 0;
+}
+
+.table td {
+  text-align: left;
+  padding: 1.4rem;
+  border-bottom: 0.1rem solid rgb(214, 214, 214);
+}
+
+.table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.table input[type="checkbox"] {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.role {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.Admin {
+  background-color: rgb(255, 159, 159);
+}
+.Advisor {
+  background-color: rgb(212, 255, 195);
+}
+.Teacher {
+  background-color: rgb(180, 244, 255);
+}
+.Student {
+  background-color: rgb(255, 248, 155);
+}
+
+/* .unreadBadge {
+  background: linear-gradient(145deg, #d9534f, #c12e2a);
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.readBadge {
+  background: linear-gradient(145deg, #5cb85c, #4cae4c);
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 50px;
+  font-weight: 600;
+} */
+.unreadBadge {
+  background: linear-gradient(145deg, #ca615d, #ce4944);
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+
+.readBadge {
+  font-size: 1.3rem;
+  background: linear-gradient(145deg, #5cb85c, #4cae4c);
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 50px;
+}
+
+.rowButtons {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 991px) {
+  .table {
+    overflow-x: auto;
+  }
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.courseTag {
+  padding: 2rem;
+  min-width: 17rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  background-color: #687d86;
+
+  transform: perspective(500px) rotateX(5deg);
+  transition: all 0.3s ease;
+}
+
+.courseTag:hover {
+  transform: perspective(500px) rotateX(0deg) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* If using random color for course tag */
+
+/* .courseTag {
+  background-color: #83639e;
+}
+.courseTag.gray {
+  background-color: #7a7a7a;
+}
+
+.courseTag.green {
+  background-color: #297537;
+}
+
+.courseTag.blue {
+  background-color: #3375ff;
+}
+
+.courseTag.purple {
+  background-color: #a233ff;
+}
+
+.courseTag.yellow {
+  background-color: #c2a140;
+} */
+
+/* .getRandomColor {
+  background-color: randomColor();
+} */
+
+.toggleSwitch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+}
+
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSwitch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.toggleSwitch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.toggleSwitch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.toggleSwitch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggleSwitch.editable .slider {
+  box-shadow: 0 0 8px #4caf50;
+}
+.highlight {
+  box-shadow: 0 0 12px #2b9c4d;
+  border-radius: 24px;
+}

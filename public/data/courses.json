@@ -1,0 +1,98 @@
+[
+  {
+    "id": "CMP101",
+    "name": "Data Structures"
+  },
+  {
+    "id": "CMP102",
+    "name": "Algorithms"
+  },
+  {
+    "id": "MTH201",
+    "name": "Calculus I"
+  },
+  {
+    "id": "MTH202",
+    "name": "Linear Algebra"
+  },
+  {
+    "id": "PHY301",
+    "name": "Quantum Mechanics"
+  },
+  {
+    "id": "PHY302",
+    "name": "Electrodynamics"
+  },
+  {
+    "id": "BIO401",
+    "name": "Genetics"
+  },
+  {
+    "id": "BIO402",
+    "name": "Cell Biology"
+  },
+  {
+    "id": "CHE501",
+    "name": "Organic Chemistry"
+  },
+  {
+    "id": "CHE502",
+    "name": "Inorganic Chemistry"
+  },
+  {
+    "id": "ENG601",
+    "name": "Thermodynamics"
+  },
+  {
+    "id": "ENG602",
+    "name": "Fluid Mechanics"
+  },
+  {
+    "id": "ENG701",
+    "name": "Creative Writing"
+  },
+  {
+    "id": "ENG702",
+    "name": "Literature"
+  },
+  {
+    "id": "POL801",
+    "name": "Comparative Politics"
+  },
+  {
+    "id": "POL802",
+    "name": "International Relations"
+  },
+  {
+    "id": "SOC901",
+    "name": "Social Theory"
+  },
+  {
+    "id": "SOC902",
+    "name": "Research Methods"
+  },
+  {
+    "id": "HIS901",
+    "name": "World History"
+  },
+  {
+    "id": "HIS902",
+    "name": "American History"
+  },
+  {
+    "id": "MTH203",
+    "name": "Calculus II"
+  },
+  {
+    "id": "CMP104",
+    "name": "Database Systems"
+  },
+  {
+    "id": "ART901",
+    "name": "Drawing"
+  },
+  {
+    "id": "ART902",
+    "name": "Painting"
+  }
+]

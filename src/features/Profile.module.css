@@ -1,0 +1,50 @@
+.profileLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.secondaryColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.basicInfoDetail {
+  display: flex;
+  gap: 10rem;
+}
+
+.profileImg {
+  width: 20rem;
+  height: 20rem;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.additional {
+  grid-column: 1/3;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  color: #383838;
+  font: 400 12px/167% Nunito, sans-serif;
+  margin-top: 114px;
+}

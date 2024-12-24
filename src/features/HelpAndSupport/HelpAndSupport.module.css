@@ -1,0 +1,16 @@
+.helpAndSupportLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.secondaryColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

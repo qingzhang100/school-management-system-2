@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+}
+
+.entriesPerPage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  /* color: #000; */
+}
+
+.entriesNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #14add6;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #14add6 0%, #384295 100%);
+  color: #fff;
+}
+
+.tableFeatures {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tableFeaturesLeftBox {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}

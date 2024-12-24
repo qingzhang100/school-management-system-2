@@ -1,0 +1,147 @@
+.overviewLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.secondaryColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.statcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.largeIcon {
+  width: 7rem;
+  height: 7rem;
+  fill: #ffffff83;
+}
+
+/* h2 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+} */
+.navigationLinks {
+  margin-top: 2rem;
+}
+
+.navigationLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigationLinks li {
+  margin-bottom: 1rem;
+}
+
+.quickLink {
+  color: #7b809a;
+}
+
+.announcements,
+.userInfo {
+  margin-top: 3rem;
+}
+
+/* =========================== */
+/* Annoucement box */
+/* =========================== */
+
+.announcementsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcementItem {
+  background-color: #e3feff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.announcementItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcementTitle {
+  color: #333;
+  margin: 0;
+}
+
+.announcementContent {
+  color: #555;
+  margin: 0;
+}
+
+.announcementDate {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: right;
+  display: block;
+  margin-top: 0.5rem;
+}
+.readMore {
+  color: #e91f63;
+}
+
+/* Small desktop */
+@media (max-width: 1366px) {
+}
+
+/* Tablet: eg. ipad pro */
+@media (max-width: 1024px) {
+  .largeIcon {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* Smaller tablet */
+@media (max-width: 768px) {
+  .overviewLayout {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .largeIcon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .statcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}

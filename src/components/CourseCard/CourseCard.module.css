@@ -1,0 +1,174 @@
+.course-card {
+  background: #fff;
+  height: 50rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.3);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.course-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+}
+
+.course-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.25s ease;
+}
+
+/* .course-card:hover .course-banner img {
+  transform: scale(1.05);
+} */
+
+.course-card:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem hsla(0, 0%, 0%, 0.4);
+}
+/* .course-banner .course-tag-box {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} */
+
+/* .course-banner .badge-tag {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-6);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 20px;
+} */
+
+/* .course-banner .orange {
+    background: var(--red-orange-color-wheel);
+  }
+  
+  .course-banner .blue {
+    background: var(--ultramarine-blue);
+  } */
+
+.course-card .course-content {
+  padding: 2rem;
+}
+
+.course-card .card-title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #6b7280;
+  line-height: 1.3;
+}
+
+.course-card a:hover {
+  text-decoration: underline;
+  color: #6b7280;
+}
+
+.course-card .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card .border-bottom {
+  margin-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.course-card .teacher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-card .teacher-img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.2);
+  width: 4rem;
+  height: 4rem;
+}
+
+.course-card .teacher-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #636e72;
+  transition: 0.25s ease;
+}
+
+.course-card .teacher-name:hover {
+  color: hsl(45, 100%, 51%);
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: hsl(45, 100%, 51%);
+}
+
+.course-card .location p,
+.course-card .rating p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #636e72;
+}
+
+/* .course-card .course-room {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: var(--fw-7);
+} */
+
+.course-card .location,
+.course-card .time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-card .icon-user {
+  fill: hsl(45, 100%, 51%);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.infoIcon {
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  width: 200px;
+  background-color: #262626;
+  color: #fafafa;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.tooltip h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.tooltip p {
+  margin: 5px 0;
+  font-size: 14px;
+}

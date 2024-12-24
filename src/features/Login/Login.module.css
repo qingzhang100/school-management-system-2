@@ -1,0 +1,146 @@
+.homepage {
+  background: linear-gradient(#ffffff, #f2f5fa);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../assets/2244.jpg");
+  background-size: cover;
+}
+
+.loginAndForgotPassword {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+
+.loginSection,
+.forgotPasswordSection {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.loginSection {
+  transform: translateX(0);
+}
+
+.forgotPasswordSection {
+  transform: translateX(100%);
+}
+
+.loginSection.moveLeft {
+  transform: translateX(-100%);
+}
+
+.forgotPasswordSection.moveLeft {
+  transform: translateX(0);
+}
+
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 16rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome {
+  color: #e91f63;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+.loginForm {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.loginFormItem {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginFormLabel {
+  text-align: left;
+  color: #7b809a;
+  font-weight: 500;
+}
+
+.loginFormInput {
+  padding: 0.5rem;
+  border: 0.1rem solid #7b809a41;
+  border-radius: 0.4rem;
+  height: 4rem;
+  box-sizing: border-box;
+}
+
+.loginFormInput:focus {
+  border: 0.3rem solid #e91f63;
+  outline: none;
+}
+
+.loginHint {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rememberMe {
+  display: flex;
+
+  align-items: center;
+}
+
+.rememberMe input[type="checkbox"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15rem solid #e91f63;
+  border-radius: 0.2rem;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+
+.rememberMe input[type="checkbox"]:checked {
+  background-color: #e91f63;
+  border-color: #e91f63;
+}
+
+.rememberMe input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0.2rem;
+}
+
+.rememberMe span {
+  margin-left: 0.5rem;
+  color: #333;
+}

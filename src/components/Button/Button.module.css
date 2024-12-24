@@ -1,0 +1,132 @@
+.btn {
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.large {
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  min-width: 10rem;
+}
+
+.small {
+  font-size: 1.3rem;
+  padding: 0.4rem 1rem;
+  min-width: 8rem;
+}
+
+.rose {
+  background-color: #e53371;
+}
+
+.rose:hover {
+  background-color: #cf1053;
+}
+
+.rose:active {
+  background-color: #e63673;
+}
+
+.blue {
+  background-color: #6ea3c4;
+}
+
+.blue:hover {
+  background-color: #397ba5;
+}
+
+.blue:active {
+  background-color: #3b779c;
+}
+
+.green {
+  background-color: #2a7430;
+}
+
+.green:hover {
+  background-color: #195a11;
+}
+
+.green:active {
+  background-color: #14af47;
+}
+
+/* Select Button */
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.sortButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sortButton:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  z-index: 10;
+  min-width: 160px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdownItem:hover {
+  background-color: #dbdbdb;
+}
+
+.dropdownItem.selected {
+  background-color: #dd5082;
+  color: white;
+  font-weight: bold;
+}
+
+.arrowDown {
+  width: 1.6rem;
+  height: 1.3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}

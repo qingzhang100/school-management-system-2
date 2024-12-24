@@ -1,0 +1,138 @@
+============================================
+                    Box
+============================================
+........ marign .......
+main section margin: 3rem (main section is the section to the right of the sidebar)
+sidebar margin(except right): 3rem
+
+......padding.........
+main section padding : --padding-medium 3rem;
+main section border-radius: 1.2rem;
+sidebar border-radius: 1.2rem;
+
+.......grid.......
+gap: 2rem;
+
+==============================================
+             TYPOGRAPHY SYSTEM
+==============================================
+
+--------- Font sizes (px) ---------
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- html
+62.5% (10px)
+
+- containerHeading
+2.4rem
+800 weight
+
+- containerHeading / sidebar menu title
+1.8rem
+800 weight
+
+- paragraph text
+1.4 rem
+
+- link text
+1.4rem
+
+- Sidebar text
+1.4rem
+
+---------- Font weights ------------
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+
+
+======================================================
+                      COLORS
+======================================================
+
+--------- sidebar COLORS -----------
+
+sidebar background-color: #4F4F52;
+
+logo 
+  background-color: #2e2e2e
+  border-bottom: 0.1rem solid #555;
+
+submenu title
+  background-color: #2b2a2f;
+
+
+..........main section..........
+page background-color: #f2f5fa;
+main section background-color: #fff;
+
+
+------------Link colors --------------
+link text: #e91f63
+sidebar item hover background:  #e91f63
+link background color(optional): #dbdbdb
+
+
+------------- stat card ---------------
+blue background-color: #17A2B8;
+
+
+
+
+==============================================
+                  BUTTONS
+==============================================
+button border-radius: 0.5rem;
+
+.rose {
+  background-color: #e53371;
+}
+
+.rose:hover {
+  background-color: #cf1053;
+}
+
+.rose:active {
+  background-color: #e63673;
+}
+
+.blue {
+  background-color: #17A2B8;
+}
+
+.blue:hover {
+  background-color: #397ba5;
+}
+
+.blue:active {
+  background-color: #3b779c;
+}
+
+.green {
+  background-color: #2a7430;
+}
+
+.green:hover {
+  background-color: #195a11;
+}
+
+.green:active {
+  background-color: #14af47;
+}
+
+  ===========================================
+  Stat card 
+  ==========================================
+  border-radius: 0.8rem;

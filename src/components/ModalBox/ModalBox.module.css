@@ -1,0 +1,32 @@
+.popup {
+  text-align: center;
+  /* width: 40rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 0 3rem 3rem;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+  margin-top: -5rem;
+  fill: #22c55e;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin: 3rem 0 1rem;
+}
+
+.popup button {
+  width: 50%;
+  background-color: #22c55e;
+  margin-top: 5rem;
+  font-size: 1.6rem;
+}

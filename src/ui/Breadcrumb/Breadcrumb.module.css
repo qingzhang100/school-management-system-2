@@ -1,0 +1,21 @@
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.path {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.home-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #333;
+  cursor: pointer;
+}

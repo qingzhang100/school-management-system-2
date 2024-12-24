@@ -1,0 +1,72 @@
+/* =================== */
+/* General Styles */
+/* =================== */
+
+.link {
+  /* color: ##e91f63; */
+}
+.link:link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: #e91f63;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.deleteLink {
+  text-align: right;
+}
+
+.noStyleLink:link,
+.noStyleLink:visited,
+.noStyleLink:hover,
+.noStyleLink:active {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.noStyleLink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.containerHeading {
+  color: #344767;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  padding: var(--padding-medium);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.containerHeader {
+  max-height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.editContainerButtons {
+  display: flex;
+  gap: 2rem;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.highlight {
+  background-color: #fdf3dd;
+  color: #444;
+}

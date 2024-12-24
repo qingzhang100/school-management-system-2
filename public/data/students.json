@@ -1,0 +1,213 @@
+[
+  {
+    "studentNo": "S001",
+    "fname": "Lucas",
+    "lname": "Harris",
+    "sex": "Male",
+    "dob": "1996-03-18",
+    "telephone": "555-5585",
+    "mobile": "555-1264",
+    "email": "lucasharris@example.com",
+    "address": "2828 Cedar St",
+    "program": [
+      { "code": "CS", "name": "Computer Science" },
+      { "code": "ECO", "name": "Economics" }
+    ],
+    "course": [
+      { "id": "CMP101", "name": "Data Structures" },
+      { "id": "CMP102", "name": "Algorithms" }
+    ]
+  },
+  {
+    "studentNo": "S002",
+    "fname": "Emily",
+    "lname": "Parker",
+    "sex": "Female",
+    "dob": "1997-11-08",
+    "telephone": "555-5586",
+    "mobile": "555-1265",
+    "email": "emilyparker@example.com",
+    "address": "2929 Spruce St",
+    "program": [{ "code": "MATH", "name": "Mathematics" }],
+    "course": [
+      { "id": "MTH201", "name": "Calculus I" },
+      { "id": "MTH202", "name": "Linear Algebra" }
+    ]
+  },
+  {
+    "studentNo": "S003",
+    "fname": "Oliver",
+    "lname": "Morris",
+    "sex": "Male",
+    "dob": "1994-07-25",
+    "telephone": "555-5587",
+    "mobile": "555-1266",
+    "email": "olivermorris@example.com",
+    "address": "3030 Birch St",
+    "program": [{ "code": "PHYS", "name": "Physics" }],
+    "course": [
+      { "id": "PHY301", "name": "Quantum Mechanics" },
+      { "id": "PHY302", "name": "Electrodynamics" }
+    ]
+  },
+  {
+    "studentNo": "S004",
+    "fname": "Sophia",
+    "lname": "Clark",
+    "sex": "Female",
+    "dob": "1995-09-20",
+    "telephone": "555-5588",
+    "mobile": "555-1267",
+    "email": "sophiaclark@example.com",
+    "address": "3131 Maple St",
+    "program": [{ "code": "BIO", "name": "Biology" }],
+    "course": [
+      { "id": "BIO401", "name": "Genetics" },
+      { "id": "BIO402", "name": "Cell Biology" }
+    ]
+  },
+  {
+    "studentNo": "S005",
+    "fname": "Aiden",
+    "lname": "Davis",
+    "sex": "Male",
+    "dob": "1996-12-11",
+    "telephone": "555-5589",
+    "mobile": "555-1268",
+    "email": "aidendavis@example.com",
+    "address": "3232 Oak St",
+    "program": [{ "code": "CHEM", "name": "Chemistry" }],
+    "course": [
+      { "id": "CHE501", "name": "Organic Chemistry" },
+      { "id": "CHE502", "name": "Inorganic Chemistry" }
+    ]
+  },
+  {
+    "studentNo": "S006",
+    "fname": "Mia",
+    "lname": "Wilson",
+    "sex": "Female",
+    "dob": "1997-06-30",
+    "telephone": "555-5590",
+    "mobile": "555-1269",
+    "email": "miawilson@example.com",
+    "address": "3333 Willow St",
+    "program": [{ "code": "ENG", "name": "Engineering" }],
+    "course": [
+      { "id": "ENG601", "name": "Thermodynamics" },
+      { "id": "ENG602", "name": "Fluid Mechanics" }
+    ]
+  },
+  {
+    "studentNo": "S007",
+    "fname": "Ethan",
+    "lname": "Brown",
+    "sex": "Male",
+    "dob": "1995-02-22",
+    "telephone": "555-5591",
+    "mobile": "555-1270",
+    "email": "ethanbrown@example.com",
+    "address": "3434 Pine St",
+    "program": [{ "code": "ENG", "name": "English" }],
+    "course": [
+      { "id": "ENG701", "name": "Creative Writing" },
+      { "id": "ENG702", "name": "Literature" }
+    ]
+  },
+  {
+    "studentNo": "S008",
+    "fname": "Harper",
+    "lname": "Taylor",
+    "sex": "Non-binary",
+    "dob": "1996-08-30",
+    "telephone": "555-5592",
+    "mobile": "555-1271",
+    "email": "harpertaylor@example.com",
+    "address": "3535 Cedar St",
+    "program": [{ "code": "POL", "name": "Political Science" }],
+    "course": [
+      { "id": "POL801", "name": "Comparative Politics" },
+      { "id": "POL802", "name": "International Relations" }
+    ]
+  },
+  {
+    "studentNo": "S009",
+    "fname": "Ava",
+    "lname": "Wilson",
+    "sex": "Female",
+    "dob": "1998-05-25",
+    "telephone": "555-5593",
+    "mobile": "555-1272",
+    "email": "avawilson@example.com",
+    "address": "3636 Maple St",
+    "program": [{ "code": "SOC", "name": "Sociology" }],
+    "course": [
+      { "id": "SOC901", "name": "Social Theory" },
+      { "id": "SOC902", "name": "Research Methods" }
+    ]
+  },
+  {
+    "studentNo": "S010",
+    "fname": "James",
+    "lname": "Martinez",
+    "sex": "Male",
+    "dob": "1994-01-12",
+    "telephone": "555-5594",
+    "mobile": "555-1273",
+    "email": "jamesmartinez@example.com",
+    "address": "3737 Birch St",
+    "program": [{ "code": "HIST", "name": "History" }],
+    "course": [
+      { "id": "HIS901", "name": "World History" },
+      { "id": "HIS902", "name": "American History" }
+    ]
+  },
+  {
+    "studentNo": "S011",
+    "fname": "Lily",
+    "lname": "Moore",
+    "sex": "Female",
+    "dob": "1998-11-15",
+    "telephone": "555-5595",
+    "mobile": "555-1274",
+    "email": "lilymoore@example.com",
+    "address": "3838 Willow St",
+    "program": [{ "code": "MATH", "name": "Mathematics" }],
+    "course": [
+      { "id": "MTH201", "name": "Calculus I" },
+      { "id": "MTH203", "name": "Calculus II" }
+    ]
+  },
+  {
+    "studentNo": "S012",
+    "fname": "Oliver",
+    "lname": "Harris",
+    "sex": "Prefer not to say",
+    "dob": "1997-04-25",
+    "telephone": "555-5596",
+    "mobile": "555-1275",
+    "email": "oliverharris@example.com",
+    "address": "3939 Oak St",
+    "program": [{ "code": "CS", "name": "Computer Science" }],
+    "course": [
+      { "id": "CMP101", "name": "Data Structures" },
+      { "id": "CMP104", "name": "Database Systems" }
+    ]
+  },
+  {
+    "studentNo": "S013",
+    "fname": "Charlotte",
+    "lname": "Lee",
+    "sex": "Female",
+    "dob": "1995-10-05",
+    "telephone": "555-5597",
+    "mobile": "555-1276",
+    "email": "charlottelee@example.com",
+    "address": "4040 Spruce St",
+    "program": [{ "code": "ART", "name": "Art" }],
+    "course": [
+      { "id": "ART901", "name": "Drawing" },
+      { "id": "ART902", "name": "Painting" }
+    ]
+  }
+]

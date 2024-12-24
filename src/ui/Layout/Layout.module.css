@@ -1,0 +1,296 @@
+.layout {
+  display: flex;
+  gap: 2rem;
+  /* width: 100% not working*/
+  width: 100vw;
+  padding: var(--padding-medium);
+}
+
+aside {
+  width: 23rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 7rem;
+  right: -4rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #e91f63;
+  border-radius: 0 0.5rem 0.5rem 0;
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  height: 6rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 0.2rem 2rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.simpleLogoContainer {
+  display: none;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.announcement {
+  position: relative;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.announcement-icon-mobile {
+  display: none;
+}
+
+.announcement-count {
+  position: absolute;
+  top: -1rem;
+  right: -1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  background-color: #e91f63;
+  border-radius: 9999px;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.nameRole {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-top: 0.3rem;
+  margin-bottom: -0.4rem;
+  text-align: right;
+  font-weight: 500;
+}
+
+.role {
+  margin-top: -0.2rem;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.user-avatar-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* flex: 1; */
+}
+
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+}
+
+.user-avatar img {
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: box-shadow 0.3s ease;
+  border: 0.4rem solid #e91f63;
+}
+
+.user-avatar img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  border-radius: 5px;
+  z-index: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu p {
+  color: #333;
+  font-weight: bold;
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  /* transition: font-weight 0.3s ease; */
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #e91f63;
+  font-size: 1.1em;
+  color: #f2f2f2;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+a li {
+  color: #333;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mainContent {
+  flex: 1;
+}
+
+@media (max-width: 1366px) {
+}
+
+/* Tablet: eg. ipad pro */
+@media (max-width: 1024px) {
+  aside {
+    width: 20rem;
+  }
+}
+
+/* Smaller tablet */
+@media (max-width: 768px) {
+  .layout {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+  }
+
+  aside {
+    border: 3px solid rgb(190, 192, 192);
+    border-radius: 1.2rem;
+  }
+
+  .closeButton {
+    display: flex;
+  }
+
+  .hideSidebar {
+    position: absolute;
+    transform: translateX(-140%);
+    z-index: 100;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .showSidebar {
+    position: absolute;
+    width: 20rem;
+    z-index: 100;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .simpleLogoContainer {
+    flex: 1;
+    display: flex;
+    height: 100%;
+  }
+
+  .user-section {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .announcement-icon {
+    display: none;
+  }
+
+  .announcement-icon-mobile {
+    display: block;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .burgerIcon {
+    flex: 1;
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .burgerIcon {
+    text-align: center;
+  }
+
+  .logoContainer {
+    display: flex;
+    background-color: #f8b4b4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+  }
+}

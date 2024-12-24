@@ -1,0 +1,64 @@
+.notFoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.notFoundContent {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.largeIcon {
+  font-size: 100px;
+  animation: bounce 1.5s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+.goHomeButton {
+  margin-top: 30px;
+}
+
+.homeLink {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.homeLink:hover {
+  background-color: #e91f63;
+  color: white;
+  cursor: pointer;
+}
+
+.bottomButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 3rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
