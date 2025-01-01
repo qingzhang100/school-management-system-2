@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// 验证规则对象
 const validationRules = {
   UserName: {
     required: true,
@@ -126,32 +125,26 @@ const validationRules = {
   },
 };
 
-// 验证单个字段的函数
 const validateField = (name, value) => {
   const rules = validationRules[name];
   if (!rules) return "";
 
-  // 检查必填
   if (rules.required && !value) {
     return rules.messages.required;
   }
 
-  // 检查最小长度
   if (rules.minLength && value.length < rules.minLength) {
     return rules.messages.minLength;
   }
 
-  // 检查最大长度
   if (rules.maxLength && value.length > rules.maxLength) {
     return rules.messages.maxLength;
   }
 
-  // 检查单个正则表达式模式
   if (rules.pattern && !rules.pattern.test(value)) {
     return rules.messages.pattern;
   }
 
-  // 检查多个正则表达式模式
   if (rules.patterns) {
     for (const { pattern, message } of rules.patterns) {
       if (!pattern.test(value)) {
@@ -160,7 +153,6 @@ const validateField = (name, value) => {
     }
   }
 
-  // 运行自定义验证函数
   if (rules.validate) {
     const error = rules.validate(value);
     if (error) return error;
@@ -174,14 +166,12 @@ const useFormValidation = (initialData) => {
   const [errors, setErrors] = useState({});
   const [isValid, setIsValid] = useState(false);
 
-  // 处理输入变化
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputData((prevData) => ({ ...prevData, [name]: value }));
     validateSingleField(name, value);
   };
 
-  // 验证整个表单
   const validateForm = (data = inputData) => {
     const newErrors = {};
     Object.keys(data).forEach((field) => {
@@ -195,7 +185,6 @@ const useFormValidation = (initialData) => {
     return valid;
   };
 
-  // 验证单个字段
   const validateSingleField = (name, value) => {
     const error = validateField(name, value);
     setErrors((prev) => ({
@@ -205,23 +194,19 @@ const useFormValidation = (initialData) => {
     return !error;
   };
 
-  // 重置错误状态
   const resetErrors = () => {
     setErrors({});
     setIsValid(false);
   };
 
-  // 获取特定字段的错误信息
   const getFieldError = (fieldName) => {
     return errors[fieldName] || "";
   };
 
-  // 提交表单时验证
   const handleSubmit = (e) => {
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
-      // 处理提交逻辑
     }
   };
 

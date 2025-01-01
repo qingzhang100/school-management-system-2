@@ -568,7 +568,7 @@ export async function deleteUser(userNo) {
 export async function checkUsernameExists(username) {
   try {
     const { data, error } = await supabase
-      .from("Users") // Replace 'Users' with the actual name of your table
+      .from("Users")
       .select("UserName") // You can select only the 'UserName' column to check if it exists
       .eq("UserName", username);
 

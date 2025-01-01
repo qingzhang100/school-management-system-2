@@ -125,49 +125,45 @@ function App() {
           title: "My Courses",
           icon: icons.MyCoursesIcon,
           children: [
-            { index: true, 
-              element: <MyCourses />, 
-              title: "My Courses" },
+            { index: true, element: <MyCourses />, title: "My Courses" },
             {
               path: "my-courses",
               element: <MyCourses />,
               title: "My Courses",
             },
-                {
-                  path: ":courseNo",
-                  element: <CourseDetails />,
-                  title: "Course Details",
-                  hideInSidebar: true,
-                },                     
-          ],
-        }
-,        
-        {
-          path: "my-grades",
-          element: <Outlet />,
-          title: "My Grades",
-          icon: icons.MyCoursesIcon,
-          children: [
-            { 
-              index: true, 
-              element: <TestGradeList />, 
-              title: "My Grades" 
-            },
             {
-              path: "my-grades",
-              element: <TestGradeList />,
-              title: "My Grades",
-            },
-            {
-              path: ":gradeId",
-              element: <TestGradeForm />,
-              title: "Test Grade Form",
+              path: ":courseNo",
+              element: <CourseDetails />,
+              title: "Course Details",
               hideInSidebar: true,
             },
-          
           ],
-        },       
-      
+        },
+        // {
+        //   path: "my-grades",
+        //   element: <Outlet />,
+        //   title: "My Grades",
+        //   icon: icons.MyCoursesIcon,
+        //   children: [
+        //     {
+        //       index: true,
+        //       element: <TestGradeList />,
+        //       title: "My Grades",
+        //     },
+        //     {
+        //       path: "my-grades",
+        //       element: <TestGradeList />,
+        //       title: "My Grades",
+        //     },
+        //     {
+        //       path: ":gradeId",
+        //       element: <TestGradeForm />,
+        //       title: "Test Grade Form",
+        //       hideInSidebar: true,
+        //     },
+        //   ],
+        // },
+
         {
           path: "users",
           element: <Outlet />,
