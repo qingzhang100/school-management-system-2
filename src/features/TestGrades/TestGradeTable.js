@@ -1,5 +1,5 @@
 import React from "react";
-import { json, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "../../components/Table.module.css";
 import useCheckbox from "../../hooks/useCheckbox";
 
@@ -13,7 +13,7 @@ function TestGradeTable({ testGradeData, userRole }) {
   const navigate = useNavigate();
 
   const currData = testGradeData; // Assuming pagination is not required
-//console.log('currData ' + JSON.stringify(currData));
+  //console.log('currData ' + JSON.stringify(currData));
   return (
     <div>
       <table className={styles.table}>
@@ -69,7 +69,13 @@ function TestGradeTable({ testGradeData, userRole }) {
               <td>{grade.isPassed ? "Yes" : "No"}</td>
               {userRole === "Teacher" && (
                 <td>
-                  <button className="Button_btn__58t-o Button_small__c9FMV Button_rose__LaWgJ" onClick={() => navigate(`/my-grades/${grade.TestGradeNo}`)}> Update </button>
+                  <button
+                    className="Button_btn__58t-o Button_small__c9FMV Button_rose__LaWgJ"
+                    onClick={() => navigate(`/my-grades/${grade.TestGradeNo}`)}
+                  >
+                    {" "}
+                    Update{" "}
+                  </button>
                 </td>
               )}
             </tr>

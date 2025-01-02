@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TableContainer from "../../ui/Layout/TableContainer";
 import CourseTable from "./CourseTable";
-import { getCourse, getCourses } from "../../services/apiCourse";
+import { getCourses } from "../../services/apiCourse";
 import MainTitle from "../../ui/MainTitle/MainTitle";
 import { useNavigate } from "react-router-dom";
 import { searchCourses } from "../../services/apiCourse";

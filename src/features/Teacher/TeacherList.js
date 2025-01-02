@@ -38,15 +38,6 @@ function TeacherList() {
     setCurrPage(1);
   }
 
-  async function handleSort(fieldName) {
-    try {
-      const sortedData = await sortTeachersBy(fieldName);
-      setTeacherData(sortedData);
-    } catch (error) {
-      console.error("Error sorting user table:", error);
-    }
-  }
-
   function handleSearch(query) {
     setSearchQuery(query);
     if (query === "") {

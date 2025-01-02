@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Login from "./features/Login/Login.js";
 import ResetPassword from "./features/Dashboard/ResetPassword.js";
@@ -12,8 +12,6 @@ import NewCourse from "./features/Course/NewCourse";
 import AppLayout from "./ui/Layout/AppLayout.js";
 import MyCourses from "./features/MyCourses/MyCourses";
 import CourseDetails from "./features/MyCourses/CourseDetails.js";
-import TestGradeList from "./features/TestGrades/TestGradeList";
-import TestGradeForm from "./features/TestGrades/TestGradeForm.js";
 import TeacherList from "./features/Teacher/TeacherList.js";
 import NewEnrollment from "./features/Enrollment/NewEnrollment.js";
 import Error from "./ui/Error.js";
@@ -44,7 +42,6 @@ import NewAnnouncement from "./features/Dashboard/NewAnnouncement.js";
 import AnnouncementDetail from "./features/Dashboard/AnnouncementDetail.js";
 import { UnreadProvider } from "./contexts/UnreadContext.js";
 import { AuthProvider } from "./contexts/AuthContext.js";
-import UpdateEnrollmentStatus from "./features/Enrollment/UpdateEnrollmentStatus.js";
 
 function App() {
   const routes = [

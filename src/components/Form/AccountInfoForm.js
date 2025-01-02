@@ -12,7 +12,6 @@ function AccountInfoForm({ userNo, showEditButton }) {
     CreatedAt: "",
     LastLoginDate: "",
   });
-  const [isEdit, setIsEdit] = useState(false);
 
   useEffect(() => {
     async function getAccountInfo() {
@@ -65,7 +64,7 @@ function AccountInfoForm({ userNo, showEditButton }) {
                 id="roleName"
                 name="RoleName"
                 className={formStyles.formInput}
-                disabled={!isEdit}
+                disabled={true}
                 value={inputData.RoleName}
                 onChange={handleChange}
               />
@@ -95,7 +94,7 @@ function AccountInfoForm({ userNo, showEditButton }) {
                 value={inputData.IsAdmin}
                 className={formStyles.formInput}
                 name="IsAdmin"
-                disabled={!isEdit}
+                disabled={!false}
               >
                 <option value={true}>Yes</option>
                 <option value={false}>No</option>
@@ -125,7 +124,7 @@ function AccountInfoForm({ userNo, showEditButton }) {
               <select
                 value={inputData.IsLockedOut}
                 className={formStyles.formInput}
-                disabled={!isEdit}
+                disabled={!false}
                 name="IsLockedOut"
               >
                 <option value={true}>Locked</option>
@@ -145,7 +144,7 @@ function AccountInfoForm({ userNo, showEditButton }) {
                 name="FailedPasswordAttempt"
                 className={formStyles.formInput}
                 value={inputData.FailedPasswordAttempt}
-                disabled={!isEdit}
+                disabled={!false}
               />
             </div>
           </div> */}

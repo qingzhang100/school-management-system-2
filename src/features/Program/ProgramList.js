@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProgramTable from "./ProgramTable.js";
 import TableContainer from "../../ui/Layout/TableContainer";
 import { getProgramList, sortProgramsBy } from "../../services/apiProgram.js";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import MainTitle from "../../ui/MainTitle/MainTitle.js";
 function ProgramList() {
   const [programData, setProgramData] = useState([]);
@@ -46,7 +46,7 @@ function ProgramList() {
   }
 
   async function handleSort(fieldName) {
-    try { 
+    try {
       const sortedData = await sortProgramsBy(fieldName);
       setProgramData(sortedData);
     } catch (error) {
@@ -79,10 +79,7 @@ function ProgramList() {
         onRowsPerPageChange={handleRowsPerPageChange}
         onClickAddBtn={handleAddBtn}
         onClickSort={handleSort}
-        sortOptions={[
-          "Course Category Code",
-          "Course Category Name"      
-        ]}
+        sortOptions={["Course Category Code", "Course Category Name"]}
         // onClickFilter={handleFilter}
         // filterOptions={["All", "ENG", "COMP"]}
       >

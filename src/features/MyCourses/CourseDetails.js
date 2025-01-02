@@ -1,21 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import generalStyles from "../../generalStyles.module.css";
-import styles from "./MyCourse.module.css";
-import course1 from "../../assets/course-STEM.jpg";
-import instructor1 from "../../assets/instructor.jpg";
-import CourseCard from "../../components/CourseCard/CourseCard";
 import TableContainer from "../../ui/Layout/TableContainer";
 import MainTitle from "../../ui/MainTitle/MainTitle";
-import { getTeacherCoursesByUserID } from "../../services/apiTeacher";
-import { getStudentCoursesByUserID } from "../../services/apiStudent";
-import { getUserByID } from "../../services/apiUser";
-import { getTeacherFullNameByCourseID } from "../../services/apiCourse";
 import Loader from "../../ui/Loader";
 import { getCourseDetail } from "../../services/apiCourse";
 
 function CourseDetails() {
-  console.log('course details');
+  console.log("course details");
   const [currPage, setCurrPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [myCourses, setMyCourses] = useState([]);
@@ -57,14 +48,9 @@ function CourseDetails() {
     setCurrPage(1);
   }
 
-  const currmyCourses = myCourses.slice(
-    (currPage - 1) * rowsPerPage,
-    currPage * rowsPerPage
-  );
-
   const getVideoUrl = (courseName) => {
     //console.log('courseName ' + courseName);
-    switch (courseName.toLowerCase()) {    
+    switch (courseName.toLowerCase()) {
       case "math g8-f2024":
         return "https://www.youtube.com/embed/DL3CM_EON-0?si=YURmSPmvWjiekXZV";
       case "biology g8-f2024":
@@ -99,10 +85,14 @@ function CourseDetails() {
         ) : (
           <>
             <h2>{course.CourseName}</h2>
-            <br/>
+            <br />
             <h4>Course Description</h4>
-            <p>Here are some descriptions for the course. And below are some suggested learning materials.</p>
-            <br/><br/>
+            <p>
+              Here are some descriptions for the course. And below are some
+              suggested learning materials.
+            </p>
+            <br />
+            <br />
             {/* <p>Course Number: {courseNo}</p>
 
             <h3>Learning Materials</h3>
@@ -123,12 +113,27 @@ function CourseDetails() {
               <ul>
                 {course.learningVideos.map((video) => (
                   <li key={video.id}>
-                    <a href={video.url} target="_blank" rel="noopener noreferrer">{video.title}</a>
+                    <a
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {video.title}
+                    </a>
                   </li>
                 ))}
               </ul>
             ) : (
-                <iframe width="560" height="315" src={getVideoUrl(course.CourseName)} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src={getVideoUrl(course.CourseName)}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             )}
 
             {/* <h3>Grades</h3>

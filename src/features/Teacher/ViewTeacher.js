@@ -6,7 +6,6 @@ import PersonalInfoForm from "../../components/Form/PersonalInfoForm";
 import MainTitle from "../../ui/MainTitle/MainTitle";
 import formStyles from "../../components/Form/Form.module.css";
 import { getTeacherCourses } from "../../services/apiTeacher";
-import Button from "../../components/Button/Button";
 import { removeCourseFromTeacher } from "../../services/apiTeacher";
 
 function TeacherDetail() {

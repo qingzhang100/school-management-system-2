@@ -6,7 +6,7 @@ import EditContainer from "../../ui/Layout/EditContainer";
 import PersonalInfoForm from "../../components/Form/PersonalInfoForm";
 import SecurityInfoForm from "../../components/Form/SecurityInfoForm";
 import AccountInfoForm from "../../components/Form/AccountInfoForm";
-import { getRoleNameByNo, getUserRoleByUserNo } from "../../services/apiUser";
+import { getUserRoleByUserNo } from "../../services/apiUser";
 import { getProfileInfoByNo } from "../../services/apiUser";
 import MainTitle from "../../ui/MainTitle/MainTitle";
 import { getTeacherCourses } from "../../services/apiTeacher";

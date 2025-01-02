@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../../components/Table.module.css";
-import { Link } from "react-router-dom";
 import Loader from "../../ui/Loader";
 import { useNavigate } from "react-router-dom";
-import useCheckbox from "../../hooks/useCheckbox";
 import Button from "../../components/Button/Button";
 
 function formatDate(dateString) {
@@ -12,12 +10,12 @@ function formatDate(dateString) {
 }
 
 function StudentTable({ studentData, rowsPerPage, currPage, isLoading }) {
-  const {
-    selectedCheckboxes,
-    handleCheckboxes,
-    isAllSelected,
-    handleSelectAll,
-  } = useCheckbox();
+  // const {
+  //   selectedCheckboxes,
+  //   handleCheckboxes,
+  //   isAllSelected,
+  //   handleSelectAll,
+  // } = useCheckbox();
 
   const currData = studentData.slice(
     (currPage - 1) * rowsPerPage,

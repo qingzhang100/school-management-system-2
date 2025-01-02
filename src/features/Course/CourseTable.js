@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import generalStyles from "../../generalStyles.module.css";
 import styles from "../../components/Table.module.css";
 //import styles from "../../components/Search/Search.module.css"
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useCheckbox from "../../hooks/useCheckbox";
 import Button from "../../components/Button/Button";
 
 function CourseTable({ data, rowsPerPage, currPage }) {
-  const [sortOrder, setSortOrder] = useState("asc");
-  const [searchTerm, setSearchTerm] = useState("");
-
   const {
     isAllSelected,
     handleSelectAll,

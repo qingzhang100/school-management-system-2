@@ -6,7 +6,6 @@ import TableContainer from "../../ui/Layout/TableContainer";
 import MainTitle from "../../ui/MainTitle/MainTitle";
 import { getTeacherCoursesByUserID } from "../../services/apiTeacher";
 import { getStudentCoursesByUserID } from "../../services/apiStudent";
-import { getUserByID } from "../../services/apiUser";
 import { getTeacherFullNameByCourseID } from "../../services/apiCourse";
 import Loader from "../../ui/Loader";
 function MyCourses() {

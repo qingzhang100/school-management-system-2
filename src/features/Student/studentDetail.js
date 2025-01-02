@@ -1,10 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { getStudentByUserNo } from "../../services/apiStudent";
-import StudentDetailForm from "../../components/Form/StudentDetailForm";
 import PersonalInfoForm from "../../components/Form/PersonalInfoForm";
 import MainTitle from "../../ui/MainTitle/MainTitle";
-import Loader from "../../ui/Loader";
 import EditContainer from "../../ui/Layout/EditContainer";
 import { getStudentEnrollments } from "../../services/apiStudent";
 import formStyles from "../../components/Form/Form.module.css";

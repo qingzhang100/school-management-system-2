@@ -1,8 +1,6 @@
 import React from "react";
-import generalStyles from "../../generalStyles.module.css";
 import styles from "../../components/Table.module.css";
-import { Link, useNavigate } from "react-router-dom";
-import useCheckbox from "../../hooks/useCheckbox";
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import Loader from "../../ui/Loader";
 

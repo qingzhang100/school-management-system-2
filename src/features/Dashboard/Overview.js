@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useAuth } from "../../contexts/AuthContext";
 import styles from "./Overview.module.css";
 import StatCard from "../../components/StatCard/StatCard";
 import icons from "../../ui/Icons/icons";

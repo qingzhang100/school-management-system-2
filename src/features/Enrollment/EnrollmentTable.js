@@ -1,7 +1,6 @@
 import React from "react";
-import generalStyles from "../../generalStyles.module.css";
 import styles from "../../components/Table.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Loader from "../../ui/Loader";
 import Button from "../../components/Button/Button";
 

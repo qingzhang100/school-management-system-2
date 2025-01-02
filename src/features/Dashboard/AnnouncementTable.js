@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import generalStyles from "../../generalStyles.module.css";
 import styles from "../../components/Table.module.css";
 import Loader from "../../ui/Loader";
-import useCheckbox from "../../hooks/useCheckbox";
 import { addUserNoToReadBy } from "../../services/apiAnnouncements";
 import { useUnreadCount } from "../../contexts/UnreadContext";
 import { getUnreadAnnouncementsCount } from "../../services/apiAnnouncements";

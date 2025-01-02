@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import AnnouncementTable from "./AnnouncementTable";
 import TableContainer from "../../ui/Layout/TableContainer";
 import MainTitle from "../../ui/MainTitle/MainTitle";
-import { useLoaderData, useNavigation } from "react-router-dom";
 import { getAnnouncements } from "../../services/apiAnnouncements";
 import Loader from "../../ui/Loader";
 import { useNavigate } from "react-router-dom";

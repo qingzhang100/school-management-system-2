@@ -5,8 +5,6 @@ import Button from "../../components/Button/Button";
 import { getCourseDetail, getCourses } from "../../services/apiCourse";
 import {
   assignCourseToTeacher as assignCourseToTeacher,
-  getTeacherIdByCourseId,
-  removeCourseAssignment,
   getTeacherIdByUserNo,
   removeCourseFromTeacher,
 } from "../../services/apiTeacher";
@@ -17,12 +15,10 @@ import { getTeacherByNo } from "../../services/apiTeacher";
 
 function AddCourseForTeacher() {
   const { userNo } = useParams();
-  const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
   const [fullName, setFullName] = useState("");
   const [error, setError] = useState(null);
   const [teacherId, setTeacherId] = useState("");
-  const [courseTeacherId, setCourseTeacherId] = useState("");
 
   useEffect(() => {
     async function fetchCourses() {
