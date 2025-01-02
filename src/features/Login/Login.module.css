@@ -61,9 +61,11 @@
 }
 
 .logo {
-  width: 16rem;
-  max-width: 100%;
+  padding: 1rem 2rem;
+  width: 100%;
   height: auto;
+  background-color: #22161e;
+  border-radius: 1.5rem;
 }
 
 .welcome {
@@ -72,15 +74,16 @@
   font-weight: 800;
   margin-bottom: 4rem;
 }
+
 .loginForm {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .loginFormItem {
   margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .loginFormLabel {

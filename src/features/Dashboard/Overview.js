@@ -3,18 +3,24 @@ import { useState, useEffect } from "react";
 import styles from "./Overview.module.css";
 import StatCard from "../../components/StatCard/StatCard";
 import icons from "../../ui/Icons/icons";
-import { getStudents } from "../../services/apiStudent";
-import { getTeachers } from "../../services/apiTeacher";
+import {
+  getStudents,
+  getStudentCoursesByUserID,
+} from "../../services/apiStudent";
+import {
+  getTeachers,
+  getTeacherCoursesByUserID,
+} from "../../services/apiTeacher";
 import { getCourses } from "../../services/apiCourse";
 import { getEnrollments } from "../../services/apiEnrollment";
 import EditContainer from "../../ui/Layout/EditContainer";
 import MainTitle from "../../ui/MainTitle/MainTitle";
-import { getTeacherCoursesByUserID } from "../../services/apiTeacher";
-import { getStudentCoursesByUserID } from "../../services/apiStudent";
 import ContactForm from "../../components/Form/ContactForm";
-import { getAnnouncements } from "../../services/apiAnnouncements";
+import {
+  getAnnouncements,
+  addUserNoToReadBy,
+} from "../../services/apiAnnouncements";
 import ModalContainer from "../../ui/Layout/ModalContainer";
-import { addUserNoToReadBy } from "../../services/apiAnnouncements";
 import { getUnreadAnnouncementsCount } from "../../services/apiAnnouncements";
 import { useUnreadCount } from "../../contexts/UnreadContext";
 import { Link, useNavigate } from "react-router-dom";

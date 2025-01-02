@@ -14,7 +14,6 @@ import {
 } from "../../services/apiEnrollment";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import MainTitle from "../../ui/MainTitle/MainTitle";
-import { getStudentCoursesByUserID } from "../../services/apiStudent";
 function EnrollCourseForm() {
   const { userNo } = useParams();
   const navigate = useNavigate();

@@ -4,7 +4,6 @@ import { RiMegaphoneLine } from "@remixicon/react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import DefaultAvatar from "../../assets/User-avatar-default.jpg";
-import logo from "../../assets/logo.png";
 import icons from "../../ui/Icons/icons";
 import supabase from "../../config/supabaseClient";
 
