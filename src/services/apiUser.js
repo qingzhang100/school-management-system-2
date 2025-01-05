@@ -425,11 +425,18 @@ export async function UploadProfileImage(image) {
   try {
     if (!image) return null;
 
+    // Should not expose service role key here
+    const serviceKey =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind2Zm50cXZqY3RmbXlhZWNub3htIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNTA3NzAyOCwiZXhwIjoyMDUwNjUzMDI4fQ._hbI4zWBdxad2ogmClsBmAPQfcAx-oO8IpHBFCgSqIc";
+
     const { data, error } = await supabase.storage
-      .from("ProfileImage") // replace with your storage bucket name
+      .from("school")
       .upload(`public/${image.name}`, image, {
         cacheControl: "3600",
         upsert: true,
+        headers: {
+          Authorization: `Bearer ${serviceKey}`,
+        },
       });
 
     if (error) {

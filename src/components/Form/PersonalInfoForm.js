@@ -153,7 +153,7 @@ function PersonalInfoForm({ userNo, hideUpload, showDeleteButton = false }) {
   };
 
   function generateManualUrl(imagePath) {
-    const url = `https://llcccnztkkxlkzblokbt.supabase.co/storage/v1/object/public/ProfileImage/${imagePath}`;
+    const url = `https://wvfntqvjctfmyaecnoxm.supabase.co/storage/v1/object/public/school/${imagePath}`;
     console.log(url);
     return url;
   }

@@ -127,7 +127,8 @@ function Layout({ children, breadcrumb, userNo }) {
           <div className={styles.breadcrumb}>{breadcrumb}</div>
 
           <div className={styles["user-section"]}>
-            <div
+            {/* Removed annnouncement icon and dynamic announcement count feature */}
+            {/* <div
               className={styles.announcement}
               onClick={() => navigate("/dashboard/announcements")}
             >
@@ -142,7 +143,7 @@ function Layout({ children, breadcrumb, userNo }) {
                 />
               </div>
               <div className={styles["announcement-count"]}>{unreadCount}</div>
-            </div>
+            </div> */}
 
             <div className={styles.nameRole}>
               <div className={styles.name}>{fullName}</div>

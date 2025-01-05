@@ -7,10 +7,7 @@ import {
   checkUsernameExists,
   getUserIdByUsername,
 } from "../../services/apiUser.js";
-import {
-  addStudent,
-  createStudentByUserId,
-} from "../../services/apiStudent.js";
+import { createStudentByUserId } from "../../services/apiStudent.js";
 import { createTeacherByUserId } from "../../services/apiTeacher.js";
 import EditContainer from "../../ui/Layout/EditContainer.js";
 import ModalBox from "../ModalBox/ModalBox.js";

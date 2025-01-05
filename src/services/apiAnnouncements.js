@@ -109,7 +109,7 @@ export async function addUserNoToReadBy(announcementId, userNo) {
 }
 
 export async function getUnreadAnnouncementsCount(userNo) {
-  console.log("USERNO", userNo);
+  console.log("API getUnreadAnnouncementsCount - USERNO", userNo);
   userNo = String(userNo);
   try {
     // Fetch all announcements
