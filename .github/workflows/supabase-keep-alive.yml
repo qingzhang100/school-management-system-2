@@ -1,0 +1,27 @@
+name: Supabase Keep Alive
+
+on:
+  schedule:
+    # 每天凌晨 3 点（UTC）跑一次，你可以改时间
+    - cron: '0 3 * * *'
+  workflow_dispatch: # 支持手动触发一次测试
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send keep-alive request to Supabase
+        run: |
+          echo "Pinging Supabase table: $SUPABASE_TABLE_NAME"
+
+          curl -s -o /dev/null -w "%{http_code}\n" \
+            "${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE_NAME}?select=1&limit=1" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json"
+
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_TABLE_NAME: ${{ secrets.SUPABASE_TABLE_NAME }}
