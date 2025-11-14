@@ -2,24 +2,30 @@ name: Supabase Keep Alive
 
 on:
   schedule:
-    # 每天凌晨 3 点（UTC）跑一次，你可以改时间
-    - cron: '0 3 * * *'
-  workflow_dispatch: # 支持手动触发一次测试
+    # 每天凌晨 3 点（UTC）跑一次（你可以改成每周或每月）
+    - cron: "0 3 * * *"
+  workflow_dispatch: # 手动触发
 
 jobs:
   ping-supabase:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send keep-alive request to Supabase
+      - name: Ping Supabase to prevent inactivity
         run: |
-          echo "Pinging Supabase table: $SUPABASE_TABLE_NAME"
+          echo "Sending keep-alive request to Supabase..."
 
-          curl -s -o /dev/null -w "%{http_code}\n" \
+          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
             "${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE_NAME}?select=1&limit=1" \
             -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
             -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
-            -H "Content-Type: application/json"
+            -H "Content-Type: application/json")
+
+          echo "Response status: $STATUS_CODE"
+
+          if [ "$STATUS_CODE" -ge 400 ]; then
+            echo "Warning: Supabase returned an error status ($STATUS_CODE)"
+          fi
 
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
